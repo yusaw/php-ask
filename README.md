@@ -1,3 +1,12 @@
+please help me with php error below.
+I tried to create BBS by PHP, but got two errors below.
+line
+
+Warning: array_unshift() expects parameter 1 to be array, boolean given in (line 38)
+
+Fatal error: Call to undefined function save_data() in  (line 39)
+
+
 <?php
 $save_file = dirname(__FILE__)."/bbslog.txt";
 $mode = isset ($_GET["mode"]) ? $_GET["mode"] : "show";
@@ -54,8 +63,3 @@ function load_data() {
 		file_put_contents($save_file, $txt);
 	}
 }
-
-
-
-
-
